@@ -6,4 +6,19 @@
 <h1 style="color:red; text-align:center;"> PRAISE THE LORD </h1>
 <p> Authentication </p>
 
+
+{% if good %}
+
+{% for able in good %}
+
+<ul>
+    <li>{{ able.name }}</li>
+    <li>{{ able.price }}</li>
+    <li>{{ able.address }}</li>
+</ul>
+{% endfor %}
+
+
+{% endif %}
+
 {% endblock %}

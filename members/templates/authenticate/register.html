@@ -6,7 +6,8 @@
 <div class ="col-md-6 offset-md-3">
 <h1 style="text-align:center; color:green;"> Register </h1>
 <br/>
-<form method ="POST">   
+<form method ="POST">  
+   
     {% csrf_token %}
 
     {{ form.as_p }}

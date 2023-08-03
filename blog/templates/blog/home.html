@@ -13,6 +13,7 @@
         <th scope="col">Name</th>
         <th scope="col">Price</th>
         <th scope="col">Address</th>
+        <th scope="col">ID</th>
         
 
       </tr>
@@ -28,6 +29,8 @@
     <td>{{ able.name }}</td>
     <td>{{ able.price }}</td>
     <td>{{ able.address }}</td>
+    <td><a href="{% url 'details' able.id %}">{{ able.id }}</a></td>
+
     
   </tr>
 {% endfor %}

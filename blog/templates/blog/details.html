@@ -1,0 +1,51 @@
+{% extends 'sass/base.html' %}
+
+{% block content %}
+
+<h1 style = "text-align:center; color:green;"> Details </h1>
+<br/>
+
+
+
+<div class="col-md-6 offset-md-3">
+
+    <div class="card">
+        <div class="card-header">
+            {{ details.name }} 
+           
+        </div>
+        <div class="card-body">
+          
+          <p class="card-text">
+            <strong>{{ details.price }}</strong>
+        </p>
+    
+        <p class="card-text">
+            <strong>{{ details.address }}</strong>
+        </p>
+    
+        <p class="card-text">
+            {{ details.id }}
+        </p>
+    
+        
+          
+        </div>
+      </div>
+      <br/>
+
+      <div style = "text-align:center;">
+        <a href = "{% url 'home' %}" class = "btn btn-success"> Back </a>
+        <a href = "{% url 'delete' details.id %}" class = "btn btn-danger"> Delete </a>
+
+        <a href = "{% url 'update' details.id %}" class = "btn btn-warning"> Update </a>
+
+
+      </div>
+
+
+
+
+
+
+{% endblock %}

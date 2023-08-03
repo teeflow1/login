@@ -3,6 +3,6 @@ from blog.models import Able
 
 def home(request):
     
-    goods = Able.objects.all()
+    good = Able.objects.all()
     
-    return render(request, "blog/home.html", {'goods':goods})
+    return render(request, "blog/home.html", {'good':good})

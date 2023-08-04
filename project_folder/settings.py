@@ -24,6 +24,13 @@ from pathlib import Path
 #environ.Env.read_env()
 
 
+import environ
+
+env = environ.Env()
+
+environ.Env.read_env()
+
+
 
 from dotenv import load_dotenv
 

@@ -99,7 +99,7 @@ WSGI_APPLICATION = 'project_folder.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -111,7 +111,7 @@ DATABASES = {
         
     }
 }
-
+'''
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
@@ -170,3 +170,18 @@ DATABASES = {
     )
       
 }
+
+
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'merblmkf',
+        'USER': 'merblmkf',
+        'PASSWORD': 'jwm_8smT2Hvp1Mq1ip0MXFTyYw89lNZs',
+        'HOST': 'bubble.db.elephantsql.com',
+        'PORT': '5432'
+    }
+}
+

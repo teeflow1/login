@@ -44,7 +44,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-w*2o#xg^^xn!v35@dh4%nnnd8)rb-kx7c^ei8v5r+)fzwi4-pn'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -177,10 +177,10 @@ DATABASES = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'merblmkf',
-        'USER': 'merblmkf',
-        'PASSWORD': 'jwm_8smT2Hvp1Mq1ip0MXFTyYw89lNZs',
-        'HOST': 'bubble.db.elephantsql.com',
+        'NAME': os.environ.get('NAME'),
+        'USER': os.environ.get('USER'),
+        'PASSWORD': os.environ.get('PASSWORD'),
+        'HOST': os.environ.get('HOST'),
         'PORT': '5432'
     }
 }
